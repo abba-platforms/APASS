@@ -1,6 +1,6 @@
 # APASS Contracts Registry
 
-Version: 1.0.0  
+Version: 2.0.0  
 Status: Official  
 Network: BNB Smart Chain (BSC Mainnet)  
 
@@ -10,296 +10,233 @@ Network: BNB Smart Chain (BSC Mainnet)
 
 This document provides the authoritative registry of all smart contracts composing the Africa Tourism Pass (APASS) protocol.
 
-It establishes a clear mapping between:
+It establishes a clear and verifiable mapping between:
 
-- Deployed on-chain contracts  
-- Verified source code  
-- Repository structure  
+- Deployed on-chain contract addresses  
+- Verified contract implementations  
+- Repository source code  
 - Functional roles within the protocol architecture  
 
 This document is intended for:
 
-- Developers and protocol integrators  
+- Developers and integrators  
 - Security auditors and reviewers  
 - Centralized exchanges (CEX) and market makers  
 - Institutional partners and policymakers  
 
 ---
 
-# 2. System Overview
+# 2. Architecture Overview
 
-The APASS protocol is a modular smart contract system implemented through a consolidated architecture.
+The APASS protocol is implemented using a modular smart contract architecture.
 
-All core protocol components are defined within a unified contract source and deployed as coordinated modules.
+All contracts are compiled from a unified Solidity source file:
 
-The system includes the following functional layers:
+/contracts/APASSProtocol.sol
 
-- Protocol Layer (APASSProtocol)  
-- Verification Layer (APASSVerificationRouter)  
-- Treasury Layer (Treasury)  
-- Governance and Access Control Layer  
+However, each component is deployed as an independent contract, enabling:
+
+- Separation of concerns  
+- Independent interaction between modules  
+- Clear audit boundaries  
+- Scalable protocol design  
+
+The system consists of the following layers:
+
+- Governance Layer (AccessManager)  
+- Treasury Layer  
+- Token Layer  
+- Verification Layer  
 - Rewards and Accounting Layer  
 - Merchant Participation Layer  
 - Redemption and Settlement Layer  
 - Dispute and Resolution Layer  
 - Supply Adjustment Layer  
 
-The APASS token exists as the native economic unit of the system and is implemented as part of the protocol architecture.
-
 ---
 
-# 3. Contract Architecture Model
+# 3. Deployment Model
 
-The APASS protocol is implemented using a consolidated smart contract architecture.
+APASS uses a modular deployment model in which multiple contracts are deployed independently from a unified Solidity source file.
 
-All contract logic is defined within a single Solidity source file:
+Each contract operates as a distinct on-chain component with clearly defined responsibilities and controlled interaction surfaces.
 
-/contracts/APASSProtocol.sol
+This model ensures:
 
-This file contains multiple logically separated contracts forming the full protocol system, including:
-
-- APASSProtocol (core coordination and governance layer)  
-- APASSVerificationRouter (verification and policy enforcement)  
-- Treasury (custody and controlled distribution layer)  
-- AccessManager (role-based access control)  
-- RewardsLedger (reward accounting)  
-- MerchantRegistry (merchant eligibility management)  
-- BurnController (supply adjustment mechanisms)  
-- Redemption (tourism settlement layer)  
-- DisputeRegistry (claims and dispute handling)  
-
-The APASS token is implemented as part of the protocol system and is not maintained as a standalone contract file within the repository.
-
-Token issuance is controlled through protocol-level functions and treasury-governed distribution mechanisms.
-
-This architecture ensures:
-
-- Centralized control of token issuance within protocol governance  
-- Reduced contract surface area  
-- Simplified audit traceability  
-- Strong alignment between economic logic and protocol execution  
+- Strong separation between governance, treasury, and execution logic  
+- Reduced systemic risk  
+- Improved upgrade and maintenance flexibility  
+- Clear traceability for audits and institutional review  
 
 ---
 
 # 4. Repository Structure
 
-All smart contract logic is maintained under:
+All smart contract logic is contained within:
 
-/contracts/APASSProtocol.sol
+/contracts/APASSProtocol.sol  
 
-This file is the canonical source of all deployed contract logic.
+This file is the canonical source of all deployed contracts.
 
-A documentation reference is also provided:
+A documentation reference is also maintained:
 
-/docs/APASSProtocol.sol.md
+/docs/APASSProtocol.sol.md  
 
-This document contains a consolidated and formatted representation of the full contract system for audit and review purposes.
+This file provides a consolidated representation of the full contract system for audit and review purposes.
 
 ---
 
 # 5. Mainnet Contract Registry
 
-## 5.1 APASS Token
+## 5.1 Governance Layer
 
-Token Address:  
-0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
-
-Standard:  
-BEP-20 native, ERC-20 compatible  
-
-Implementation:  
-Protocol-integrated (not a standalone repository contract file)  
-
-Function:  
-The APASS token serves as the native economic unit of the protocol, enabling reward distribution, redemption, and external trading.
-
-Key Properties:  
-- Maximum supply: 100,000,000,000 APASS  
-- Initial minted supply: 1,000,000,000 APASS  
-- Minting controlled via protocol-level functions (protocolMint)  
-- No unrestricted public mint interface  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
----
-
-## 5.2 APASSProtocol (Proxy)
-
-Contract Name:  
-APASSProtocol  
-
-Proxy Address:  
-0xa4Dd345Af15eB45F0c0efe32c5AE969C901d5f04  
-
-Implementation Address:  
-0x1233b2D383Aee736C562392aC8e919873ad9dC6b  
-
-Type:  
-Upgradeable (UUPS Proxy)  
-
-Function:  
-Serves as the central coordination and execution layer of the APASS protocol.
-
-Key Responsibilities:  
-- Orchestrates protocol operations  
-- Enforces governance and role control  
-- Coordinates treasury and reward flows  
-- Enables controlled upgradeability  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
----
-
-## 5.3 APASSVerificationRouter
-
-Contract Name:  
-APASSVerificationRouter  
+### AccessManager
 
 Address:  
-0x03fEb9637Ff65fcA7708c97Cdb4737a09C45e8cf  
-
-Upgradeability:  
-Non-upgradeable  
+0xa4Dd345Af15eB45F0c0efe32c5AE969C901d5f04  
 
 Function:  
-Validates tourism interactions prior to reward issuance.
+Central governance and role-based access control contract.
 
-Key Controls:  
-- Qualification balance enforcement  
-- Merchant and holder limits  
-- Short-window and pair-window controls  
-- Discount bounds  
-- Verification delay constraints  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
+Key Responsibilities:  
+- Manages all protocol roles and permissions  
+- Controls administrative authority across contracts  
+- Enforces access restrictions for sensitive operations  
 
 ---
 
-## 5.4 Treasury
+## 5.2 Treasury Layer
 
-Contract Name:  
-Treasury  
+### Treasury (Proxy)
 
 Address:  
 0xd1049ca00F5F5E05939d39e7909101793901C318  
-
-Upgradeability:  
-Non-upgradeable  
 
 Function:  
 Custody and controlled distribution of APASS token inventory.
 
 Key Properties:  
-- Central token reserve  
-- Tagged pool system (Rewards, Burn Compensation)  
-- Restricted distribution via authorized roles  
+- Central reserve of protocol tokens  
+- Tagged pool system (Rewards Pool, Burn Compensation Pool)  
+- Distribution restricted to authorized roles  
 - No arbitrary withdrawals  
 
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
 ---
 
-## 5.5 AccessManager
+## 5.3 Token Layer
 
-Contract Name:  
-AccessManager  
+### APASS Token
 
-Type:  
-Role-based access control  
+Address:  
+0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
 
-Function:  
-Enforces permissions and governance controls across the protocol.
-
-Key Responsibilities:  
-- Role assignment and revocation  
-- Administrative control enforcement  
-- Protection of sensitive operations  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
----
-
-## 5.6 RewardsLedger
-
-Contract Name:  
-RewardsLedger  
+Standard:  
+BEP-20 native, ERC-20 compatible  
 
 Function:  
-Maintains accounting of reward entitlements from verified tourism activity.
+Native economic unit of the APASS protocol.
 
 Key Properties:  
-- Tracks reward allocations  
+- Maximum supply: 100,000,000,000 APASS  
+- Initial minted supply: 1,000,000,000 APASS  
+- Minting controlled via protocol-level authorization  
+- Supports rewards, redemption, and external trading  
+
+---
+
+## 5.4 Verification Layer
+
+### APASSVerificationRouter
+
+Address:  
+0x03fEb9637Ff65fcA7708c97Cdb4737a09C45e8cf  
+
+Function:  
+Validates tourism interactions before rewards are issued.
+
+Key Controls:  
+- Qualification balance thresholds  
+- Merchant and holder transaction limits  
+- Time-window enforcement rules  
+- Discount bounds  
+- Verification delay constraints  
+
+---
+
+## 5.5 Merchant Participation Layer
+
+### MerchantRegistry
+
+Address:  
+0xdB6227623Ebd35ef9c0C81F7Ad279457FC2c290a  
+
+Function:  
+Registers and manages eligible tourism merchants.
+
+Key Properties:  
+- Defines participation eligibility  
+- Integrates with verification layer  
+- Controls merchant-level access  
+
+---
+
+## 5.6 Rewards and Accounting Layer
+
+### RewardsLedger
+
+Address:  
+0xc16FF4E7072E8C34A43e74D141FA8255eC75309e  
+
+Function:  
+Maintains accounting of rewards generated from verified tourism activity.
+
+Key Properties:  
+- Records reward entitlements  
 - Separates accounting from distribution  
 - Works with treasury-controlled releases  
 
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
 ---
 
-## 5.7 MerchantRegistry
+## 5.7 Supply Adjustment Layer
 
-Contract Name:  
-MerchantRegistry  
+### BurnController
 
-Function:  
-Registers and manages eligible tourism operators.
-
-Key Properties:  
-- Defines valid merchants  
-- Enforces participation eligibility  
-- Integrates with verification logic  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
----
-
-## 5.8 BurnController
-
-Contract Name:  
-BurnController  
+Address:  
+0x93e15Db33f5EC95eE74f5b6B9632adE2945dF83d  
 
 Function:  
-Executes controlled token burn operations and supply adjustments.
+Executes controlled token burn operations.
 
 Key Properties:  
 - Permissioned burn execution  
-- Supports economic balancing  
-- Linked to treasury accounting  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
+- Supports supply discipline  
+- Integrated with economic policy  
 
 ---
 
-## 5.9 Redemption
+## 5.8 Redemption and Settlement Layer
 
-Contract Name:  
-Redemption  
+### Redemption
+
+Address:  
+0x699A433210DCBBC4B287E2b3829EC584ECe9DDf1  
 
 Function:  
 Handles redemption of APASS tokens for tourism services.
 
 Key Properties:  
 - Enables economic loop closure  
-- Integrates with treasury and verification layers  
+- Integrates with treasury and verification systems  
 - Controlled settlement execution  
-
-Repository Reference:  
-/contracts/APASSProtocol.sol  
 
 ---
 
-## 5.10 DisputeRegistry
+## 5.9 Dispute and Resolution Layer
 
-Contract Name:  
-DisputeRegistry  
+### DisputeRegistry
+
+Address:  
+0xc725d7C9c068CEF9E33F46b34356e480d792a107  
 
 Function:  
 Manages disputes related to tourism transactions and protocol activity.
@@ -309,44 +246,47 @@ Key Properties:
 - Transparent claims recording  
 - Supports resolution workflows  
 
-Repository Reference:  
-/contracts/APASSProtocol.sol  
-
 ---
 
-# 6. Governance and Roles
+# 6. Role Configuration
 
-The APASS system operates under role-based access control.
+The protocol operates under a structured role-based governance model.
 
-Core roles include:
+Key roles include:
 
-- DEFAULT_ADMIN_ROLE  
-- TREASURY_AUTHORIZED_ROLE  
-- DISTRIBUTOR_ROLE  
-- BURN_ADMIN_ROLE  
+- ADMIN  
+- GOVERNANCE  
+- UPGRADER  
+- PAUSER  
+- TOKEN ADMIN  
+- MERCHANT ADMIN  
+- BURN ADMIN  
+- REWARDS ADMIN  
+- TREASURY ADMIN  
+- REDEMPTION ADMIN  
+- VERIFIER ADMIN  
+- DISPUTE ADMIN  
 
-Governance structure is defined in:
-
-/docs/GOVERNANCE.md  
+Role assignments are enforced through the AccessManager contract.
 
 ---
 
 # 7. Upgradeability Model
 
-The APASS protocol uses a hybrid upgradeability model.
+The APASS protocol uses a hybrid upgradeability approach.
+
+Upgradeable components:
+- Treasury (proxy-based architecture where applicable)  
 
 Non-upgradeable components:
-- APASSVerificationRouter  
-- Treasury  
+- Token  
+- Router  
+- Registry modules  
+- Controllers  
 
-Upgradeable component:
-- APASSProtocol (UUPS Proxy)  
+All upgrade actions must be:
 
-Token logic is protocol-integrated and governed through the system architecture.
-
-All upgrades are:
-
-- Governance-controlled  
+- Authorized through governance roles  
 - Executed on-chain  
 - Fully traceable  
 
@@ -354,18 +294,18 @@ All upgrades are:
 
 # 8. Verification and Transparency
 
-All contracts must be:
+All contracts are expected to be:
 
 - Verified on BscScan  
-- Matched with repository source  
-- Bytecode-consistent  
+- Bytecode-matched with repository source  
+- Publicly accessible  
 
 This ensures:
 
-- Public transparency  
 - Auditability  
-- Exchange readiness  
+- Transparency  
 - Institutional trust  
+- Exchange readiness  
 
 ---
 
@@ -373,12 +313,12 @@ This ensures:
 
 The APASS contract system enforces a closed-loop economic model:
 
-1. Tourism activity is verified  
+1. Tourism activity is verified via Router  
 2. Rewards are recorded in RewardsLedger  
 3. Tokens are released from Treasury  
-4. Tokens are utilized or traded  
-5. Tokens are redeemed for services  
-6. Optional burn mechanisms adjust supply  
+4. Tokens are used or traded externally  
+5. Tokens are redeemed for tourism services  
+6. BurnController adjusts supply where applicable  
 
 This ensures that token circulation is directly tied to verified economic participation.
 
@@ -389,14 +329,14 @@ This ensures that token circulation is directly tied to verified economic partic
 To maintain institutional standards:
 
 - Full contract source must be provided  
-- No truncated files  
-- SPDX license identifiers required  
-- Deployed contracts must match repository code  
+- No truncated or partial files  
+- SPDX license identifiers must be present  
+- Repository code must match deployed contracts  
 
 This is required for:
 
-- Audit readiness  
-- Exchange due diligence  
+- Security audits  
+- Exchange listings  
 - Institutional adoption  
 
 ---
@@ -405,13 +345,13 @@ This is required for:
 
 This document must be updated upon:
 
-- New deployments  
+- New contract deployments  
 - Contract upgrades  
 - Address changes  
 - Governance updates  
-- Verification changes  
+- Verification status changes  
 
-Machine-readable deployment data:
+Machine-readable deployment data should be maintained in:
 
 /deployments/mainnet.json  
 
