@@ -5,11 +5,26 @@
 
 ## Reimagining Tourism Across Africa
 
-APASS establishes a unified, verifiable economic layer for tourism across Africa.
+### Discover Africa. Earn Rewards. Unlock Experiences.
 
-Africa Tourism Pass (APASS) is a blockchain-native digital infrastructure designed to support the modernization, coordination, and integration of Africa’s tourism economy.
+By [Simon Kapenda](https://linkedin.com/in/simonkapenda).     
+**Date:** March 20, 2026      
+**Protocol Network:** BNB Smart Chain  
+**Repository Status:** Active Infrastructure
 
-APASS introduces a unified verification, rewards, and settlement framework capable of connecting tourism operators, travelers, and services across national boundaries. At the core of this system is the APASS token, which serves as the native economic unit embedded within the protocol architecture.
+------------------------------------------------------------
+
+# Executive Summary      
+
+Africa Tourism Pass (APASS) is a blockchain-native digital infrastructure designed to support the modernization and integration of Africa’s tourism economy. It introduces a unified verification, rewards, and settlement framework capable of connecting tourism operators, travelers, and services across national boundaries. At the core of the system is the APASS token, which functions as the native economic unit embedded within the protocol architecture.
+
+APASS token enables holders to access discounts from participating tourism merchants while earning rewards from verified tourism activity. Travelers continue to transact with merchants using conventional payment methods such as credit cards, mobile payments, bank transfers, or cash, while the APASS token operates as a digital verification and incentive layer integrated with these transactions.
+
+When an APASS token holder interacts with a participating merchant, a QR scan or point-of-sale verification records the interaction on-chain, creating a transparent and verifiable record of tourism activity. Each verified interaction generates reward points and triggers a controlled token burn, linking real-world participation with disciplined token supply management.
+
+Accumulated reward points may be applied when acquiring additional APASS tokens, reinforcing continued engagement within the ecosystem and strengthening network effects across tourism operators and travelers.
+
+By combining tourism incentives, blockchain-based verification, and a structured rewards system, APASS is designed to increase tourism participation, support operator revenue growth, and enable more coordinated cross-border travel across Africa.
 
 ---
 
