@@ -59,6 +59,15 @@ MAJOR.MINOR.PATCH
 - Added docs/SECURITY.md (security framework)
 - Added docs/GOVERNANCE.md (role and control structure)
 - Added docs/DEPLOYMENT.md (deployment procedures)
+- Added docs/INTEGRATION.md (integration framework and system interaction model)
+
+### Integration
+
+- Defined APASS integration framework for merchants, platforms, payment systems, governments, and exchanges
+- Introduced structured tree-based integration flow for end-to-end system interaction
+- Established Router-based smart contract interaction model for integrations
+- Documented merchant onboarding and verification workflows
+- Clarified integration boundaries and non-custodial operational model
 
 ### Repository
 
@@ -87,6 +96,6 @@ Incremented for bug fixes, optimizations, and non-breaking updates.
 
 ## Notes
 
-Version 1.0.0 represents the baseline production release of the APASS protocol, including full deployment, documentation, and contract system availability.
+Version 1.0.0 represents the baseline production release of the APASS protocol, including full deployment, documentation, contract system availability, and integration framework.
 
 All subsequent updates will build upon this version.
