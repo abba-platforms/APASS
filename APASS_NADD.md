@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-The integration between Africa Tourism Pass (APASS) and the [Namibia Digital Dollar (NADD)](https://github.com/abba-platforms/nadd) establishes a dual-layer digital infrastructure for tourism.
+The integration between [Africa Tourism Pass (APASS)](https://github.com/abba-platforms/APASS) and the [Namibia Digital Dollar (NADD)](https://github.com/abba-platforms/nadd) establishes a dual-layer digital infrastructure for tourism.
 
 APASS operates as a verification and incentive layer, while NADD functions as a regulated digital settlement layer representing the Namibian Dollar (NAD) on a 1:1 basis onchain. NADD was developed by [Simon Kapenda](https://linkedin.com/in/simonkapenda), the founder and creator of the APASS protocol.
 
