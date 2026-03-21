@@ -8,6 +8,22 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [1.0.1] - 2026-03-21 - Model Definition Update
+
+### Model and System Definition
+
+- Added APASS_MODEL.md defining the tourism interaction model and system-level operational flow
+- Documented end-to-end traveler lifecycle including token acquisition, participation, verification, rewards, and reuse
+- Introduced merchant interaction model covering onboarding, verification, and ecosystem participation
+- Defined non-custodial settlement structure operating alongside conventional payment systems
+- Established economic feedback loop linking tourism activity with token access and sustained participation
+- Added full system architecture diagram illustrating interaction between Router, Merchant Registry, Rewards Ledger, Treasury, Token Layer, and Burn Controller
+- Defined data and analytics layer for measurable tourism activity and ecosystem insights
+- Documented risk management and control mechanisms including role-based access and verification safeguards
+- Clarified system boundaries and interoperability with external systems including wallets, exchanges, and POS integrations
+
+---
+
 ## [1.0.0] - 2026-03-20 - Initial Protocol Release
 
 ### Protocol
