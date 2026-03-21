@@ -10,6 +10,18 @@ MAJOR.MINOR.PATCH
 
 ## [v1.0.3] - 2026-03-21
 
+### Added
+
+- Added MERCHANT_ONBOARDING.md to the root directory
+
+  Introduces an institutional-grade framework for onboarding tourism merchants onto the Africa Tourism Pass (APASS) network, covering registration, verification, participation setup, activation, transaction verification, rewards, compliance, and operational structure.
+
+  The document also includes ASCII diagrams illustrating onboarding flow, transaction verification, and ecosystem relationships.
+
+---
+
+## [v1.0.3] - 2026-03-21
+
 ### Updated
 
 - Updated README.md to include "Additional Protocol Documents" section
