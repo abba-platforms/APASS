@@ -8,6 +8,20 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.2] - 2026-03-21
+
+### Added
+
+- Added APASS_NADD.md to the root directory
+
+  Introduces the integration model between Africa Tourism Pass (APASS) and the Namibia Digital Dollar (NADD), defining a dual-layer architecture where APASS operates as a non-custodial verification and incentive protocol, and NADD functions as a regulated digital settlement layer representing the Namibian Dollar (NAD) on a 1:1 basis onchain.
+
+  The document establishes Namibia as the initial deployment environment and outlines system roles, integration architecture, operational flow, economic structure, compliance separation, and deployment strategy.
+
+  It further clarifies that APASS remains payment-agnostic and does not depend on NADD as an exclusive settlement mechanism. Tourism transactions may be settled through multiple payment methods, including credit cards, mobile payments, bank transfers, and cash, with NADD serving as an integrated settlement option within Namibia.
+
+---
+
 ## [1.0.1] - 2026-03-21 - Model Definition Update
 
 ### Model and System Definition
