@@ -247,7 +247,6 @@ https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md
 
 - Whitepaper  
   https://github.com/abba-platforms/APASS/blob/main/WHITEPAPER.md  
-
 - Economic Analysis  
   https://github.com/abba-platforms/APASS/blob/main/ECONOMIC_ANALYSIS.md  
 
@@ -273,6 +272,8 @@ https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md
 ```text
 /contracts
 /docs
+/APASS_MODEL.md
+/APASS_NADD.md
 /AUDIT.md
 /WHITEPAPER.md
 /ECONOMIC_ANALYSIS.md
@@ -293,6 +294,47 @@ It is a protocol-level infrastructure designed to:
 - Introduce verifiable economic coordination
 - Enable cross-border participation
 - Establish a standardized incentive layer for tourism
+
+---
+
+# Additional Protocol Documents
+
+The APASS repository includes supplementary institutional documents that define the operational and integration layers of the protocol beyond the core whitepaper.
+
+## APASS Operational Model
+
+- [APASS_MODEL.md](./APASS_MODEL.md)
+
+This document provides a structured definition of how the APASS protocol operates in real-world tourism environments. It outlines:
+
+- Traveler interaction lifecycle
+- Merchant participation model
+- Verification mechanisms (QR, POS, mobile)
+- Reward issuance logic
+- Incentive feedback loop driving continued engagement
+
+It serves as the practical execution layer of the APASS protocol.
+
+---
+
+## APASS–NADD Integration Model
+
+- [APASS_NADD.md](./APASS_NADD.md)
+
+This document defines the integration between APASS and the Namibia Digital Dollar (NADD), establishing a dual-layer architecture:
+
+- APASS as a non-custodial verification and incentive layer
+- NADD as a regulated digital settlement layer representing the Namibian Dollar (NAD) on a 1:1 basis onchain
+
+The document includes:
+
+- System roles and responsibilities
+- Integration architecture and operational flow
+- Economic and settlement model
+- Compliance and custody separation
+- Deployment strategy with Namibia as the initial market
+
+It further clarifies that APASS remains payment-agnostic, supporting multiple forms of payment including credit cards, mobile payments, bank transfers, and cash, with NADD serving as an integrated settlement option within Namibia.
 
 ---
 
