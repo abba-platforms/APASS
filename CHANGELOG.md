@@ -8,6 +8,24 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.3] - 2026-03-21
+
+### Updated
+
+- Updated README.md to include "Additional Protocol Documents" section
+
+  Introduces structured references to APASS_MODEL.md and APASS_NADD.md located in the root directory, providing clear visibility into the operational and integration layers of the APASS protocol.
+
+  The update includes:
+
+  - APASS_MODEL.md, defining the operational model of the protocol, including traveler interaction flows, merchant participation, verification mechanisms, reward issuance logic, and the incentive feedback loop.
+
+  - APASS_NADD.md, defining the integration model between APASS and the Namibia Digital Dollar (NADD), establishing a dual-layer architecture with APASS as a non-custodial verification and incentive layer, and NADD as a regulated settlement layer representing the Namibian Dollar (NAD) on a 1:1 basis onchain.
+  
+  - The section also reinforces that APASS remains payment-agnostic, supporting multiple settlement methods including credit cards, mobile payments, bank transfers, and cash, while positioning NADD as an integrated settlement option within Namibia.
+
+---
+
 ## [v1.0.2] - 2026-03-21
 
 ### Added
