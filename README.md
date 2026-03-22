@@ -68,10 +68,10 @@ Verification (QR / POS)
    ▼
 Router (On-Chain Entry)
    │
-   ├─────────────┬─────────────┬──────────────┐
+   ├───────────────┬───────────────┬───────────────┐
    ▼               ▼               ▼               ▼
 Rewards Ledger   Treasury     Burn Controller   Registry
-   │                │                │               │
+   │               │               │               │
    ▼               ▼               ▼               ▼
 Rewards Issued   Token Flow    Supply Adjusted   Activity Logged
    │
@@ -231,8 +231,6 @@ All contracts are deployed on BNB Smart Chain (BSC Mainnet) and are publicly ver
 
 ---  
 
----
-
 # Economic Model
 
 APASS is designed as a participation-driven economic system.
@@ -306,6 +304,7 @@ The APASS repository provides comprehensive technical, economic, and operational
 
 - Whitepaper: https://github.com/abba-platforms/APASS/blob/main/WHITEPAPER.md
 - Economic Analysis: https://github.com/abba-platforms/APASS/blob/main/ECONOMIC_ANALYSIS.md
+- Tokenomics: https://github.com/abba-platforms/APASS/blob/main/docs/TOKENOMICS.md
 - Architecture: https://github.com/abba-platforms/APASS/blob/main/docs/ARCHITECTURE.md
 - Governance: https://github.com/abba-platforms/APASS/blob/main/docs/GOVERNANCE.md
 - Security: https://github.com/abba-platforms/APASS/blob/main/docs/SECURITY.md
@@ -336,14 +335,13 @@ The APASS repository provides comprehensive technical, economic, and operational
 /APASS_MODEL.md
 /APASS_NADD.md
 /AUDIT.md
-/WHITEPAPER.md
+/CHANGELOG.md
 /ECONOMIC_ANALYSIS.md
+/LICENSE.md
 /MERCHANT_ONBOARDING.md
 /README.md
-/LICENSE.md
-/CHANGELOG.md
+/WHITEPAPER.md
 ```
-
 ---
 
 # Positioning
