@@ -245,25 +245,29 @@ https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md
 
 # Documentation
 
-- Whitepaper  
-  https://github.com/abba-platforms/APASS/blob/main/WHITEPAPER.md  
-- Economic Analysis  
-  https://github.com/abba-platforms/APASS/blob/main/ECONOMIC_ANALYSIS.md  
+The APASS repository provides comprehensive technical, economic, and operational documentation:
 
-- Contract Registry  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md  
+- Whitepaper: https://github.com/abba-platforms/APASS/blob/main/WHITEPAPER.md
+- Economic Analysis: https://github.com/abba-platforms/APASS/blob/main/ECONOMIC_ANALYSIS.md
+- Architecture: https://github.com/abba-platforms/APASS/blob/main/docs/ARCHITECTURE.md
+- Governance: https://github.com/abba-platforms/APASS/blob/main/docs/GOVERNANCE.md
+- Security: https://github.com/abba-platforms/APASS/blob/main/docs/SECURITY.md
+- Deployment: https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md
+- Integration: https://github.com/abba-platforms/APASS/blob/main/docs/INTEGRATION.md
 
-- Architecture  
-  https://github.com/abba-platforms/APASS/blob/main/docs/ARCHITECTURE.md  
+### Models and Integrations
 
-- Security  
-  https://github.com/abba-platforms/APASS/blob/main/docs/SECURITY.md  
+- APASS Model: https://github.com/abba-platforms/APASS/blob/main/APASS_MODEL.md
+- APASS + NADD Integration: https://github.com/abba-platforms/APASS/blob/main/APASS_NADD.md
 
-- Governance  
-  https://github.com/abba-platforms/APASS/blob/main/docs/GOVERNANCE.md  
+### Operations
 
-- Deployment  
-  https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md  
+- Merchant Onboarding: https://github.com/abba-platforms/APASS/blob/main/MERCHANT_ONBOARDING.md
+
+### Smart Contracts
+
+- Contracts Overview: https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md
+- Contracts Source: https://github.com/abba-platforms/APASS/blob/main/contracts/APASSProtocol.sol.md  
 
 ---
 
@@ -277,6 +281,7 @@ https://github.com/abba-platforms/APASS/blob/main/docs/DEPLOYMENT.md
 /AUDIT.md
 /WHITEPAPER.md
 /ECONOMIC_ANALYSIS.md
+/MERCHANT_ONBOARDING.md
 /README.md
 /LICENSE.md
 /CHANGELOG.md
@@ -335,6 +340,14 @@ The document includes:
 - Deployment strategy with Namibia as the initial market
 
 It further clarifies that APASS remains payment-agnostic, supporting multiple forms of payment including credit cards, mobile payments, bank transfers, and cash, with NADD serving as an integrated settlement option within Namibia.
+
+---
+
+## Merchant Onboarding
+
+A structured framework outlining how tourism merchants—including hotels, lodges, tour operators, and tourism service providers—can join the APASS network at no cost, integrate verification mechanisms, and participate in the incentive-driven tourism ecosystem.
+
+Documentation: https://github.com/abba-platforms/APASS/blob/main/MERCHANT_ONBOARDING.md
 
 ---
 
