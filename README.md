@@ -159,7 +159,7 @@ All contracts are deployed on BNB Smart Chain (BSC Mainnet) and are publicly ver
   Decimals: 18  
   Max Supply: 100,000,000,000  
   Address: 0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
-  BscScan: https://bscscan.com/address/0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
+  BscScan: https://bscscan.com/token/0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
 
 - APASS Token Implementation (Verified)  
   Address: 0x1233b2D383Aee736C562392aC8e919873ad9dC6b  
