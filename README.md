@@ -131,28 +131,6 @@ https://github.com/abba-platforms/APASS/blob/main/docs/ARCHITECTURE.md
 
 ---
 
-# Core Contract Addresses (BSC Mainnet)
-
-- [AccessManager](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#accessmanager)
-
-- [Treasury (Proxy)](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#treasury-proxy)
-
-- [APASS Token](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#apass-token)
-
-- [MerchantRegistry](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#merchantregistry)
-
-- [BurnController](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#burncontroller)
-
-- [RewardsLedger](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#rewardsledger)
-
-- [APASSVerificationRouter](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#apassverificationrouter)
-
-- [DisputeRegistry](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#disputeregistry)
-
-- [Redemption](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#redemption)
-
----
-
 # Smart Contracts
 
 The APASS smart contract system is fully deployed on BNB Smart Chain (BSC Mainnet).
@@ -164,6 +142,94 @@ https://github.com/abba-platforms/APASS/blob/main/contracts/APASSProtocol.sol.md
 Full registry:
 
 https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md
+
+---
+
+# Core Contract Addresses (BSC Mainnet)
+
+All contracts are deployed on BNB Smart Chain (BSC Mainnet) and are publicly verifiable on BscScan.
+
+---
+
+## Token Layer
+
+- APASS Token (Main Contract)       
+  Symbol: APASS  
+  Standard: BEP-20 (ERC-20 compatible)  
+  Decimals: 18  
+  Max Supply: 100,000,000,000  
+  Address: 0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
+  BscScan: https://bscscan.com/address/0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
+
+- APASS Token Implementation (Verified)  
+  Address: 0x1233b2D383Aee736C562392aC8e919873ad9dC6b  
+  BscScan: https://bscscan.com/address/0x1233b2D383Aee736C562392aC8e919873ad9dC6b  
+
+---
+
+## Governance Layer
+
+- AccessManager  
+  Address: 0xa4Dd345Af15eB45F0c0efe32c5AE969C901d5f04  
+  BscScan: https://bscscan.com/address/0xa4Dd345Af15eB45F0c0efe32c5AE969C901d5f04  
+
+---
+
+## Treasury Layer
+
+- Treasury (Proxy)  
+  Address: 0xd1049ca00F5F5E05939d39e7909101793901C318  
+  BscScan: https://bscscan.com/address/0xd1049ca00F5F5E05939d39e7909101793901C318  
+
+---
+
+## Verification Layer
+
+- APASSVerificationRouter  
+  Address: 0x03fEb9637Ff65fcA7708c97Cdb4737a09C45e8cf  
+  BscScan: https://bscscan.com/address/0x03fEb9637Ff65fcA7708c97Cdb4737a09C45e8cf  
+
+---
+
+## Merchant Participation Layer
+
+- MerchantRegistry  
+  Address: 0xdB6227623Ebd35ef9c0C81F7Ad279457FC2c290a  
+  BscScan: https://bscscan.com/address/0xdB6227623Ebd35ef9c0C81F7Ad279457FC2c290a  
+
+---
+
+## Rewards and Accounting Layer
+
+- RewardsLedger  
+  Address: 0xc16FF4E7072E8C34A43e74D141FA8255eC75309e  
+  BscScan: https://bscscan.com/address/0xc16FF4E7072E8C34A43e74D141FA8255eC75309e  
+
+---
+
+## Supply Adjustment Layer
+
+- BurnController  
+  Address: 0x93e15Db33f5EC95eE74f5b6B9632adE2945dF83d  
+  BscScan: https://bscscan.com/address/0x93e15Db33f5EC95eE74f5b6B9632adE2945dF83d  
+
+---
+
+## Redemption and Settlement Layer
+
+- Redemption  
+  Address: 0x699A433210DCBBC4B287E2b3829EC584ECe9DDf1  
+  BscScan: https://bscscan.com/address/0x699A433210DCBBC4B287E2b3829EC584ECe9DDf1  
+
+---
+
+## Dispute and Resolution Layer
+
+- DisputeRegistry  
+  Address: 0xc725d7C9c068CEF9E33F46b34356e480d792a107  
+  BscScan: https://bscscan.com/address/0xc725d7C9c068CEF9E33F46b34356e480d792a107  
+
+---  
 
 ---
 
