@@ -6,6 +6,40 @@ Network: BNB Smart Chain (BSC Mainnet)
 
 ---
 
+# Table of Contents
+
+- [1. Purpose](#1-purpose)
+- [2. Architecture Overview](#2-architecture-overview)
+- [3. Deployment Model](#3-deployment-model)
+- [4. Repository Structure](#4-repository-structure)
+- [5. Mainnet Contract Registry](#5-mainnet-contract-registry)
+  - [5.1 Governance Layer](#51-governance-layer)
+    - [AccessManager](#accessmanager)
+  - [5.2 Treasury Layer](#52-treasury-layer)
+    - [Treasury (Proxy)](#treasury-proxy)
+  - [5.3 Token Layer](#53-token-layer)
+    - [APASS Token](#apass-token)
+  - [5.4 Verification Layer](#54-verification-layer)
+    - [APASSVerificationRouter](#apassverificationrouter)
+  - [5.5 Merchant Participation Layer](#55-merchant-participation-layer)
+    - [MerchantRegistry](#merchantregistry)
+  - [5.6 Rewards and Accounting Layer](#56-rewards-and-accounting-layer)
+    - [RewardsLedger](#rewardsledger)
+  - [5.7 Supply Adjustment Layer](#57-supply-adjustment-layer)
+    - [BurnController](#burncontroller)
+  - [5.8 Redemption and Settlement Layer](#58-redemption-and-settlement-layer)
+    - [Redemption](#redemption)
+  - [5.9 Dispute and Resolution Layer](#59-dispute-and-resolution-layer)
+    - [DisputeRegistry](#disputeregistry)
+- [6. Role Configuration](#6-role-configuration)
+- [7. Upgradeability Model](#7-upgradeability-model)
+- [8. Verification and Transparency](#8-verification-and-transparency)
+- [9. Economic Flow Mapping](#9-economic-flow-mapping)
+- [10. Repository Integrity Requirements](#10-repository-integrity-requirements)
+- [11. Maintenance](#11-maintenance)
+
+---
+
 # 1. Purpose
 
 This document provides the authoritative registry of all smart contracts composing the Africa Tourism Pass (APASS) protocol.
@@ -90,7 +124,7 @@ This file provides a consolidated representation of the full contract system for
 
 ## 5.1 Governance Layer
 
-### AccessManager
+### AccessManager <a id="accessmanager"></a>
 
 Address:  
 0xa4Dd345Af15eB45F0c0efe32c5AE969C901d5f04  
@@ -107,7 +141,7 @@ Key Responsibilities:
 
 ## 5.2 Treasury Layer
 
-### Treasury (Proxy)
+### Treasury (Proxy) <a id="treasury-proxy"></a>
 
 Address:  
 0xd1049ca00F5F5E05939d39e7909101793901C318  
@@ -125,7 +159,7 @@ Key Properties:
 
 ## 5.3 Token Layer
 
-### APASS Token
+### APASS Token <a id="apass-token"></a>
 
 Address:  
 0x8f5c7779D860558AD236dC45C247c55b5D7BB3D5  
@@ -146,7 +180,7 @@ Key Properties:
 
 ## 5.4 Verification Layer
 
-### APASSVerificationRouter
+### APASSVerificationRouter <a id="apassverificationrouter"></a>
 
 Address:  
 0x03fEb9637Ff65fcA7708c97Cdb4737a09C45e8cf  
@@ -165,7 +199,7 @@ Key Controls:
 
 ## 5.5 Merchant Participation Layer
 
-### MerchantRegistry
+### MerchantRegistry <a id="merchantregistry"></a>
 
 Address:  
 0xdB6227623Ebd35ef9c0C81F7Ad279457FC2c290a  
@@ -182,7 +216,7 @@ Key Properties:
 
 ## 5.6 Rewards and Accounting Layer
 
-### RewardsLedger
+### RewardsLedger <a id="rewardsledger"></a>
 
 Address:  
 0xc16FF4E7072E8C34A43e74D141FA8255eC75309e  
@@ -199,7 +233,7 @@ Key Properties:
 
 ## 5.7 Supply Adjustment Layer
 
-### BurnController
+### BurnController <a id="burncontroller"></a>
 
 Address:  
 0x93e15Db33f5EC95eE74f5b6B9632adE2945dF83d  
@@ -216,7 +250,7 @@ Key Properties:
 
 ## 5.8 Redemption and Settlement Layer
 
-### Redemption
+### Redemption <a id="redemption"></a>
 
 Address:  
 0x699A433210DCBBC4B287E2b3829EC584ECe9DDf1  
@@ -233,7 +267,7 @@ Key Properties:
 
 ## 5.9 Dispute and Resolution Layer
 
-### DisputeRegistry
+### DisputeRegistry <a id="disputeregistry"></a>
 
 Address:  
 0xc725d7C9c068CEF9E33F46b34356e480d792a107  
