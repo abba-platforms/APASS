@@ -133,32 +133,23 @@ https://github.com/abba-platforms/APASS/blob/main/docs/ARCHITECTURE.md
 
 # Core Contract Addresses (BSC Mainnet)
 
-- AccessManager  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#accessmanager  
+- [AccessManager](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#accessmanager)
 
-- Treasury  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#treasury  
+- [Treasury (Proxy)](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#treasury-proxy)
 
-- APASS Token  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#token  
+- [APASS Token](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#apass-token)
 
-- Merchant Registry  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#merchantregistry  
+- [MerchantRegistry](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#merchantregistry)
 
-- Burn Controller  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#burncontroller  
+- [BurnController](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#burncontroller)
 
-- Rewards Ledger  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#rewardsledger  
+- [RewardsLedger](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#rewardsledger)
 
-- Router  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#router  
+- [APASSVerificationRouter](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#apassverificationrouter)
 
-- Dispute Registry  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#disputeregistry  
+- [DisputeRegistry](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#disputeregistry)
 
-- Redemption  
-  https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#redemption  
+- [Redemption](https://github.com/abba-platforms/APASS/blob/main/docs/CONTRACTS.md#redemption)
 
 ---
 
