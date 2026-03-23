@@ -8,6 +8,30 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.3] - 2026-03-23 - Added APASS Rewards & Points System Documentation
+
+### Added
+- Introduced `APASS_POINTS_REWARDS.md` in the repository root
+- Comprehensive documentation of the APASS Rewards & Points system
+- Detailed explanation of:
+  - APASS Points (non-transferable engagement layer)
+  - APASS Token (transferable on-chain value layer)
+  - Points-to-token discount mechanism
+  - Merchant incentive model (discounts for token holders)
+  - Traveler and token holder benefits
+  - Protocol controls and economic safeguards
+  - Institutional and regulatory positioning
+
+### Updated
+- README updated with a concise summary of the APASS Rewards & Points system
+- Added direct link to full documentation for improved accessibility and clarity
+
+### Notes
+- No changes to smart contracts or protocol logic
+- Documentation update only
+
+---
+
 ## [v1.0.3] - 2026-03-23
 
 ### Added
