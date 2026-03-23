@@ -8,6 +8,33 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.3] - 2026-03-23
+
+### Added
+
+- docs/INVESTOR_PITCH.md
+
+  Introduced a full institutional-grade investor pitch for Africa Tourism Pass (APASS), covering:
+
+  - Executive Summary and Problem Definition
+  - APASS Protocol Architecture and Functional Layers
+  - Market Opportunity including tourism volume and long-term growth projections
+  - Token Utility and ecosystem participation model
+  - Revenue & Value Capture including token acquisition via CEX and platform
+  - Business Model outlining infrastructure-aligned monetization pathways
+  - Strategic Integration including stablecoins (USDT, NADD, ZARU, cNGN)
+  - Go-To-Market Strategy with zero-cost merchant onboarding and platform deployment
+  - Initial Market Focus with Namibia as the launch market
+  - Use of Proceeds aligned to ecosystem scaling
+  - Team & Execution including planned CEO and full operational structure
+  - Execution Readiness with deployed contracts and onboarding framework
+  - Investment Thesis and macro positioning
+  - Appendix outlining basis of market data and projections
+
+  The document is structured for institutional use and supports investor engagement, partnerships, and ecosystem expansion.
+
+---
+
 ## [v1.0.3] - 2026-03-21
 
 ### Added
