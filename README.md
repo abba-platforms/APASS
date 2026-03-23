@@ -28,6 +28,17 @@ By combining tourism incentives, blockchain-based verification, and a structured
 
 ---
 
+# Rewards & Points
+
+APASS introduces a structured Rewards & Points system designed to incentivize verified tourism activity across its ecosystem.
+
+Travelers earn APASS Points through participation, which can be used to access discounted APASS tokens, while participating tourism operators can offer pricing incentives to token holders, creating stronger customer acquisition and retention.
+
+Full details:  
+https://github.com/abba-platforms/APASS/blob/main/APASS_POINTS_REWARDS.md
+
+---
+
 # Protocol Status
 
 - Network: BNB Smart Chain (Mainnet)
@@ -332,6 +343,7 @@ The APASS repository provides comprehensive technical, economic, and operational
 ```text
 /contracts
 /docs
+/APASS_POINTS_REWARDS.md
 /APASS_MODEL.md
 /APASS_NADD.md
 /AUDIT.md
