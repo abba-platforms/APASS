@@ -8,6 +8,28 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.3] - 2026-03-27
+
+### Added
+
+- `ADD_APASS.md`
+
+  Added a beginner-friendly wallet onboarding guide in the repository root explaining how to add APASS to BEP-20 compatible wallets, including MetaMask, Trust Wallet, and Binance Web3 Wallet.
+
+  The document covers:
+
+  - Wallet setup and network selection (BNB Smart Chain / BEP-20)
+  - Adding APASS using the official contract address
+  - Receiving APASS tokens using a wallet address
+  - Explanation of wallet addresses for non-technical users
+  - Guidance on zero balances before receipt and token logo visibility
+  - Reminder that BNB is required for transaction fees
+  - Security best practices for safe wallet usage
+
+  This addition improves user onboarding and makes APASS more accessible to participants with no prior crypto experience.
+
+---
+
 ## [v1.0.3] - 2026-03-23 - Added APASS Rewards & Points System Documentation
 
 ### Added
