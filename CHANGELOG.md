@@ -12,6 +12,39 @@ MAJOR.MINOR.PATCH
 
 ### Added
 
+- `ADD_MERCHANTS.md`
+
+  Added a comprehensive merchant onboarding specification in the repository root defining the v1 operational framework for onboarding tourism operators into the APASS ecosystem.
+
+  The document includes:
+
+  - Merchant data model and structured record format
+  - Required and optional merchant fields
+  - Merchant and transaction ID standards
+  - Merchant status lifecycle definitions
+  - Discount policy structure and requirements
+  - Multi-property merchant support
+  - Wallet address handling guidelines
+  - Storage options (JSON and database evolution path)
+  - Recommended repository file structure
+  - Merchant onboarding workflow for initial participants
+  - Transaction logging and verification standards
+  - APASS Points calculation logic
+  - Support and dispute handling framework
+  - Suggested backend API endpoints for future implementation
+  - Security and data handling practices
+  - Public vs internal data separation model
+  - Success criteria for first merchant onboarding
+  - Defined upgrade path toward scalable infrastructure
+
+  This addition establishes a standardized and operationally ready approach for onboarding APASS merchants and executing real-world transactions.
+
+---
+
+## [v1.0.3] - 2026-03-27
+
+### Added
+
 - `ADD_APASS.md`
 
   Added a beginner-friendly wallet onboarding guide in the repository root explaining how to add APASS to BEP-20 compatible wallets, including MetaMask, Trust Wallet, and Binance Web3 Wallet.
