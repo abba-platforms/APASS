@@ -8,6 +8,16 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.3] - 2026-04-03
+
+### Added
+- Added APASS_MOBILITY.md: Institutional framework extending APASS across e-hailing (Yango, Bolt, Uber) and alternative accommodation platforms (Airbnb, short-term rentals), including system architecture, economic model, quantitative analysis, token dynamics, network effects, compliance posture, and deployment strategy.
+
+### Updated
+- Updated README to include "Mobility & Alternative Accommodation" section with backlink to APASS_MOBILITY.md.
+
+---
+
 ## [v1.0.3] - 2026-03-27
 
 ### Added
