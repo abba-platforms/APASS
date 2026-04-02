@@ -261,6 +261,12 @@ https://github.com/abba-platforms/APASS/blob/main/ECONOMIC_ANALYSIS.md
 
 ---
 
+## Mobility & Alternative Accommodation
+
+APASS extends beyond traditional accommodation to include e-hailing services (Yango, Bolt, Uber) and alternative stay platforms such as Airbnb and short-term rentals. Without altering existing payment or booking systems, APASS recognizes verified travel activity across mobility and decentralized accommodation, enabling a unified incentive layer across the full tourism journey. For a detailed framework, see: https://github.com/abba-platforms/APASS/blob/main/APASS_MOBILITY.md
+
+---
+
 # Scope
 
 APASS is not a payment processor and does not replace existing financial systems.  
