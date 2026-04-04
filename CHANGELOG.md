@@ -8,6 +8,19 @@ MAJOR.MINOR.PATCH
 
 ---
 
+## [v1.0.4] - 2026-04-04
+
+### Added
+- Introduced **APASS_CEX.md** — an institutional-grade Centralized Exchange (CEX) strategy framework defining treasury-governed market integration, liquidity architecture, circulating supply controls, and exchange listing methodology
+- Established a structured liquidity model covering order book depth, market maker coordination, and treasury-managed deployment
+- Defined multi-vertical economic integration across accommodation, mobility (e-hailing), and alternative lodging as core drivers of token demand and circulation
+- Added institutional participation pathways, including OTC allocation and treasury-coordinated access
+- Introduced token velocity framework (reward, redemption, and market velocity) and redemption–liquidity interaction model
+- Formalized market integrity and stability controls, including treasury-coordinated liquidity adjustments and volatility response mechanisms
+- Clarified regulatory positioning of APASS as a utility-driven access and incentive layer, not a financial instrument
+
+---
+
 ## [v1.0.3] - 2026-04-03
 
 ### Added
